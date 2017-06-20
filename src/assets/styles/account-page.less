@@ -1,0 +1,154 @@
+.page {
+  height: 95vh;
+}
+
+.page-body {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.page-left {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-right {
+  padding: 0px 10px;
+  width: 600px;
+}
+
+.wallet-list {
+  padding: 5px;
+}
+
+.log-list{
+  padding: 40px;
+}
+
+.log-item{
+  padding: 5px;
+  height: 20px;
+  margin-top: 10px;
+  border: 2px solid transparent;
+}
+
+.log-item .log-item-comment {
+    visibility: hidden;
+    width: 100%;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: relative;
+    z-index: 1;
+    bottom: -150%;
+    left: -5px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.log-item .log-item-comment::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -15px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+}
+
+.log-item:hover .log-item-comment {
+    visibility: visible;
+    opacity: 1;
+}
+
+.log-item-type-expense {
+  color: red;  
+  font-size: 18px;
+  font-weight: 700;
+  float: left;
+}
+
+.log-item-type-income {
+  color: green;  
+  font-size: 18px;
+  font-weight: 700;
+  float: left;
+}
+
+.log-item-amount {
+  margin-left: 5px;
+  color: black;
+  font-size: 18px;
+  float: left;
+}
+
+.log-item-currency {
+  margin-left: 5px;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  float: left;
+}
+
+.log-item-right {
+  float: right;
+  font-weight: 700;
+}
+
+.wallet-item {
+  cursor: pointer;
+  height: 60px;
+  margin-top: 10px;
+  border: 2px solid transparent;
+}
+
+.wallet-item:hover {
+  cursor: pointer;
+  height: 60px;
+  margin-top: 10px;
+  border: 2px solid #f26000;
+}
+
+.wallet-item-selected {
+  cursor: pointer;
+  color: white;
+  background-color: #f26000;
+  height: 60px;
+  margin-top: 10px;
+  border: 2px solid #f26000;
+}
+
+.wallet-item-left {
+  float: left;
+  padding-left: 10px;
+}
+
+.wallet-item-right {
+  float: right;
+  height: 100%;
+}
+
+.add-wallet-button {
+  outline: none;
+  min-width: 300px;
+  width: 100%;
+  height: 60px;
+  font-size: 20px;
+  border: 2px solid transparent;
+  color: white;
+  background-color: #f26000;
+}
+
+.delete-wallet-button {
+  outline: none;
+  height: 100%;
+  font-size: 20px;
+  background-color: #f26000;
+  color: #fff;
+  border: 2px solid transparent;
+}

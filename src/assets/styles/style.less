@@ -1,0 +1,66 @@
+@font-face {
+    font-family: PT_Sans;
+    src: url(../fonts/PT_Sans-Narrow-Web-Regular.ttf);
+}
+
+body {
+  overflow: hidden;
+  font-family: PT_Sans;
+  background: url('../img/background.jpg');
+  margin: 0px;
+}
+
+button {
+  font-family: PT_Sans;
+  cursor: pointer;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+}
+
+.modal div {
+
+}
+
+.page-wrapper {
+  margin: 0px auto;
+  max-width: 980px;
+  height: 100%;
+  width: 980px;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+}
+
+.pagination-item{
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  padding: 2px;
+  border: 1px solid transparent
+}
+
+.pagination-item:hover{
+  border: 1px solid #f26000
+}
+
+.pagination-selected-item { 
+  cursor: pointer; 
+  width: 20px;
+  height: 20px;
+  background-color: #f26000;
+  color: white;
+  text-align: center;
+  padding: 2px;
+  border: 1px solid transparent
+}
